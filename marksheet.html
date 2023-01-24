@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+var a,b,c;
+function sum()
+{
+	a=Number(document.getElementById("sub1").value);
+	b=Number(document.getElementById("sub2").value);	
+	c=Number(document.getElementById("sub3").value);
+	total=a+b+c;
+	document.getElementById("answer").value=total;
+}
+
+</script>
+</head>
+<body>
+enter s1 mark=<input id="sub1"><br/>
+enter s2 mark=<input id="sub2"><br/>
+enter s3 mark=<input id="sub3"><br/>
+<button onclick="sum()">total</button>
+<input id="answer">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+	function odd_even()
+	{
+		var no;
+		no=Number(document.getElementById("first").value);
+		if(no%2==0)
+		{
+			document.getElementById("answer1").innerHTML="even number";
+		}
+		else
+		{
+			document.getElementById("answer2").innerHTML="odd number";
+		}
+	}
+</script>
+</head>
+<body>
+enter no=<input id="first">
+<button onclick="odd_even()">odd or even</button>
+<span id="answer1"></span><br>
+<span id="answer2"></span>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+	var num1,num2,result;
+	function add()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1+num2;
+		document.getElementById("answer").value=result;
+	}
+	function sub()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1-num2;
+		document.getElementById("answer").value=result;
+	}
+	function mul()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1*num2;
+		document.getElementById("answer").value=result;
+	}
+</script>
+</head>
+<body>
+enter first no=<input id="first"><br>
+enter second no=<input id="second"><br>
+<button  onclick="add()">add</button>
+<button  onclick="sub()">sub</button>
+<button  onclick="mul()">mul</button>
+<input id="answer">
+</body>
+</html>

@@ -1,0 +1,199 @@
+<html>
+<head>
+		<script type="text/javascript">
+
+			function calcPrimeNumber()
+			{
+
+				 var beginNum = parseInt(document.numbers.firstNum.value);
+				 var endNum = parseInt(document.numbers.secondNum.value);
+				 var primeNumbs = new Array();
+				 var ctr = beginNum;
+ 				while(ctr<=endNum)
+				{
+					if(isPrime(ctr)==true)
+					 {
+  						primeNumbs[primeNumbs.length] = ctr;
+  					}
+ 					 ctr = ctr+1;
+				}
+ 				if (primeNumbs.length == 0)
+				{
+					document.getElementById('output_content').innerHTML = "There were no prime no within the range.";
+				 }
+ 				else
+ 				{
+ 					outputPrimeNums(primeNumbs);
+  				}
+			}
+			function isPrime(num)
+			{
+				var flag = true;
+				for(var i=2; i<=Math.ceil(num/2); i++)
+ 				{
+					if((num%i)==0)
+				{
+				flag = false;
+				 break;
+			}
+			return flag;    
+ 			}
+
+ 			function outputPrimeNums(primes)
+			{
+ 				var html = "<h2>Prime Numbers</h2>";
+ 				for (i=0;i<primes.length;i++){
+  				html += primes[i] + "<br/>";
+			 }
+ 				document.getElementById('output_content').innerHTML = html;
+ 			}
+
+</script>
+</head>
+<body>
+<form name="numbers">
+Beginning Number: <input type="text" name="firstNum" />
+End Number: <input type="text" name="secondNum" />
+<input type="button" value="Find Prime Numbers" onclick="calcPrimeNumber()" />
+
+</form>
+<div id="output_content">
+</div>
+</body>
+</html>
+<html>
+<head>
+<script>
+function palin()
+{
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("no_input").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+alert(temp);
+}
+</script>
+</head>
+<body>
+Enter any Number: <input id="no_input">
+<button onclick="palin()">Check</button></br></br>
+</body>
+</html>
+
+<html>
+<head>
+<script>
+function armstr()
+{
+var arm=0,a,b,c,d,num;
+num=Number(document.getElementById("no_input").value);
+
+temp=num;
+while(temp>0)
+{
+a=temp%10;
+temp=parseInt(temp/10); // convert float into Integer
+arm=arm+a*a*a;
+}
+if(arm==num)
+{
+alert("Armstrong number");
+}
+else
+{
+alert("Not Armstrong number");
+}
+}
+</script>
+</head>
+<body>
+Enter any Number: <input id="no_input">
+<button onclick="armstr()">Check</button></br></br>
+</body>
+</html>
+<html>
+<head>
+<script>
+function palin()
+{
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("no_input").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+alert(temp);
+}
+</script>
+</head>
+<body>
+Enter any Number: <input id="no_input">
+<button onclick="palin()">Check</button></br></br>
+</body>
+</html>
+<html>
+<head>
+<script>
+function palin()
+{
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("no_input").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+if(temp==b)
+{
+alert("Palindrome number");
+}
+else
+{
+alert("Not Palindrome number");
+}
+}
+</script>
+</head>
+<body>
+Enter any Number: <input id="no_input">
+<button onclick="palin()">Check</button></br></br>
+</body>
+</html>
+<html>
+<head>
+<script>
+function verify(){
+var no;
+no=Number(document.getElementById("age").value);
+if(no<18)
+{
+alert("Under 18");
+}
+else
+{
+alert("You are Adult");
+}
+}
+</script>
+</head>
+<body>
+Enter your age:<input id="age"><br />
+<button onclick="verify()">Click me</button>
+</body>
+</html>
