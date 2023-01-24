@@ -1,0 +1,58 @@
+<html>
+<head>
+<script type="text/javascript">
+	var num1,num2,result;
+	function add()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1+num2;					//add two element
+		document.getElementById("answer").value=result;
+	}
+	function sub()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1-num2;					//substract two element
+		document.getElementById("answer").value=result;
+	}
+	function mul()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1*num2;					//multiply two element
+		document.getElementById("answer").value=result;
+	}
+	function division()
+	{
+		num1=Number(document.getElementById("first").value);
+		num2=Number(document.getElementById("second").value);
+		result=num1/num2;					//divide two element
+		document.getElementById("answer").value=result;
+	}
+</script>
+</head>
+<body>
+<p>Here we perform the function addition,substraction,division and multiplication.</p>
+<table>
+<tr>
+	<td>enter first no=</td>
+	<td><input id="first"></td>
+</tr>
+<tr>
+	<td>enter second no=</td>
+	<td><input id="second"></td>
+</tr>
+<tr>
+	<td> Answer=</td>
+	<td><input id="answer"></td>
+</tr>
+<tr>
+<td colspan="2"><button  onclick="add()">add</button>
+		<button  onclick="sub()">sub</button>
+		<button  onclick="mul()">mul</button>
+		<button  onclick="division()">div</button>
+</td>
+</tr>
+</body>
+</html>
